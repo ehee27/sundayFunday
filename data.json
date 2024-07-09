@@ -1,0 +1,44 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Title 1",
+      "description": "This is a description of job number 1.",
+      "status": "pending",
+      "userId": 27
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "description": "This is a description of job number 2.",
+      "status": "pending",
+      "userId": 27
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "description": "This is a description of job number 3.",
+      "status": "pending",
+      "userId": 27
+    },
+    {
+      "id": 4,
+      "title": "Title 4",
+      "description": "This is a description of job number 4.",
+      "status": "pending",
+      "userId": 27
+    },
+    {
+      "id": 5,
+      "title": "Title 5",
+      "description": "This is a description of job number 5.",
+      "status": "pending",
+      "userId": 27
+    }
+  ],
+  "users": [
+    { "id": 1, "username": "slucas27", "firstName": "Scott" },
+    { "id": 2, "username": "slucasMac88", "firstName": "Steven" },
+    { "id": 3, "username": "elDiablo79", "firstName": "Jason" }
+  ]
+}
