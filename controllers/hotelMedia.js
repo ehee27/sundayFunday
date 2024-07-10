@@ -1,5 +1,5 @@
 const convert = require('xml-js')
-const fetchSOAP = require('../utils/xmlReqMethod')
+const fetchSOAP = require('../utils/xmlRequest')
 
 // Create the POST body specifying the resource to retrieve
 const call = async xmlBody => {
@@ -29,12 +29,12 @@ const call = async xmlBody => {
   return unformattedJSON
 }
 
-const callGetHotelMedia = async hotelCode => {
+const callGetHotelMedia = async () => {
   const xmlBody = `<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <GetHotelMedia xmlns="http://webapi.globusandcosmos.com/">
-      <hotelCode>${hotelCode}</hotelCode>
+      <hotelCode>SIBISC</hotelCode>
     </GetHotelMedia>
   </soap:Body>
 </soap:Envelope>`

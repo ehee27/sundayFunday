@@ -11,16 +11,19 @@ const Buttons = () => {
   const handleClick = () => {
     setTransition(true)
     setTimeout(async () => {
-      const response = await fetch('http://localhost:4000/api/get-jobs')
-        .then(res => res.json())
-        .then(res => console.log(res))
-      setData(response)
+      // const response = await fetch('http://localhost:4000/api/get-jobs', {
+      //   method: 'POST',
+      //   body: {hotelCode: }
+      // })
+      //   .then(res => res.json())
+      //   .then(res => console.log(res))
+      // setData(response)
       setTransition(false)
       // console.log('This is data', data)
     }, 1000)
   }
   return (
-    <div className="bg-zinc-100 flex flex-col justify-center items-center gap-4 shadow-md p-3">
+    <div className="flex flex-col justify-center items-center gap-4 shadow-md p-3">
       <div className="flex gap-4 py-3 px-5">
         {buttonNames?.map((button, i) => (
           <button

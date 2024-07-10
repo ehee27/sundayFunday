@@ -8,10 +8,20 @@ const HotelCodesForm = () => {
 
   let codes = hotelData.data?.slice(3229)
 
-  const handleSelection = e => {
-    setSelection(e.target.value)
-    console.log('This...', e.target.value)
+  const handleSelection = async e => {
+    const response = await fetch(
+      'http://localhost:4000/api/globus/get-hotel-media',
+      {
+        method: 'POST',
+        body: { code: e.target.value },
+      }
+    )
+    setSelection(response)
+    // console.log('This...', e.target.value)
+    console.log('This...', response)
   }
+  //
+
   return (
     <div className="flex flex-col justify-center items-center p-5 animate-slidedown">
       <p className="text-md text-zinc-400">Select A Hotel</p>
