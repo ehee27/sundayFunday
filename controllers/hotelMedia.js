@@ -34,7 +34,7 @@ const callGetHotelMedia = async () => {
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <GetHotelMedia xmlns="http://webapi.globusandcosmos.com/">
-      <hotelCode>SIBISC</hotelCode>
+      <hotelCode>AGRITC</hotelCode>
     </GetHotelMedia>
   </soap:Body>
 </soap:Envelope>`

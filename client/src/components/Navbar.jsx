@@ -9,8 +9,8 @@ const Navbar = () => {
       </div>
       <div className="md:col-span-2 flex justify-center items-center gap-2">
         <Link to="/">Home</Link>
-        {/* <Link to="/page2">Page2</Link>
-        <Link to="/page3">Page3</Link> */}
+        <Link to="/tours">Tours</Link>
+        {/* <Link to="/tour-media">Tour Media</Link> */}
       </div>
     </div>
   )
